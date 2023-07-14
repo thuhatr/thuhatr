@@ -1,0 +1,60 @@
+<!Doctype html>
+  
+<html>
+   <head>
+   <style>
+   h1 {
+   color: rgb(29, 30, 26);
+   text-align: center; 
+   }
+   </style>
+   </head>
+   <body>
+   <h1>Lâm Ngọc Nhi</h1> 
+   </body>
+   
+         <head>
+         <style>
+         .heart {
+         position: relative;
+         width: 100px;
+         height: 90px;
+         animation: beat 1s infinite;
+         margin: auto; /* thêm dòng này để căn giữa hình trái tim */
+         }
+         .heart:before,
+         .heart:after {
+         position: absolute;
+         content: "";
+         left: 50px;
+         top: 0;
+         width: 50px;
+         height: 80px;
+         background: rgb(226, 24, 24);
+         border-radius: 50px 50px 0 0;
+         transform: rotate(-45deg);
+         transform-origin: 0 100%;
+         }
+         .heart:after {
+         left: 0;
+         transform: rotate(45deg);
+         transform-origin: 100% 100%;
+         }
+         @keyframes beat {
+         0% {
+         transform: scale(1);
+         }
+         50% {
+         transform: scale(1.2);
+         }
+         100% {
+         transform: scale(1);
+         }
+         }
+         </style>
+         </head>
+         <body>
+         <div class="heart"></div>
+         </body>
+         </html>
+         
